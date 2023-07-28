@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Personal Portfolio website</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/a095719b9d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+  <div class = "container">
+   <nav>
+     <img src="logo.jpeg" class="logo">
+     <ul id="sidemenu">
+       <li><a href="#header">Home</a></li>
+       <li><a href="#about">About</a></li>
+       <li><a href="#services">Services</a></li>
+       <li><a href="#portfolio">Portfolio</a></li>
+       <li><a href="#contact">Contact</a></li>
+       <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+     </ul>
+     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+   </nav>
+    <div class="header-text">
+    <p>Web developer</p>
+      <h1><span>Mrinal Kumar</span><br> from  Ara (BIHAR)</h1>
+    </div>
+  </div>
+</div>
+  
+<!-- ABOUT -->
+  
+<div id="about">
+  <div class="conatiner">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="about.jpeg">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About me</h1>
+        <p>I am Mrinal Kumar, currently pursuing B.Tech from National Institute of Technology Patna in Computer Science and Engineering.
+        Having keen Interest in (problem solving)competitive programming and web Development. </p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('Education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>C++/Java</span><br>Competitve Coding</li>
+            <li><span>Web Development</span><br>Web app Development</li>
+            <li><span>MySQL</span><br>Creation of Databases</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="Experience">
+          <ul>
+            <li><span>2021-Present</span><br>Practicing problems on various coding platforms.</li>
+            <li><span>Web Development</span><br>Designed some responsive websites</li>
+            <li><span>MySQL</span><br>Implemented alongwith some projects</li>
+          </ul>
+        </div>
+
+        <div class="tab-contents" id="Education">
+          <ul>
+            <li><span>2021-2025</span><br>B-Tech(CSE) NIT PATNA</li>
+            <li><span>2019-2021</span><br>12th from Jain College Ara</li>
+            <li><span>2017-2019</span><br>10th From JNV BIHIYA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- services -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My skills</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+           <h2>Competitive programming</h2>
+          <p>solved 600+ questions on various coding platforms like CodeChef, leetcode, GeeksforGeeks.</p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-crop"></i>
+           <h2>Web design</h2>
+          <p>Attended course of Web Development Bootcamp on Udemy, and builded some personal projects like portfolio, Keeper App and have done cloning of websites as well.</p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <div>
+          <i class="fa-brands fa-app-store-ios"></i>
+           <h2>MySQL</h2>
+          <p>Having knowledge of concept of Databases and also having good command on MySQL</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- portfolio/work -->
+<div id="portfolio">
+  <div class="container">
+     <h1 class="sub-title">My work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="work-1.png">
+        <div class="layer">
+          <h3>Online coding Platform</h3>
+          <p>you can master data structures and algorithms concept on this platform</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="work-2.jpg">
+        <div class="layer">
+          <h3>Keeper App</h3>
+          <p>you can save and delete your notes here with ease.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">see more</a>
+  </div>
+</div>
+  
+  <!-- contact -->
+  <div id="contact">
+    <div  class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-regular fa-paper-plane"></i>mrinalkrlt87@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+          <div class="social-icons">
+            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="Resume..pdf" download class="btn btn2">Download</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright ©. Made by <i class="fa-solid fa-heart"></i> Mrinal Kumar</p>
+    </div>
+  </div>
+
+
+  
+  <script src="script.js"></script>
+
+ 
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
